@@ -1,3 +1,7 @@
+/**
+ @file course.cc
+ @brief defines methods for inputting series of courses
+ */
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.
@@ -13,7 +17,10 @@ using namespace std;
 course::course(){
     hours = 0.0;
 }
-
+/**
+ @brief function used to take course information from the standard input
+ @param std::istream& ins standard input stream
+ */
 void course::input(std::istream& ins){
     if(ins == cin){
 	cout<<"Course Number: ";

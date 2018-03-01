@@ -1,3 +1,7 @@
+/**
+ @file college.cc
+ @brief contains methods for College object defined in college.h
+ */
 //********************
 //Matthew Aberegg
 //Project 3
@@ -16,7 +20,6 @@ College::College(std::string s){
 	head = NULL;
 }
 
-
 College::~College(){
 	node * rmptr;
 	while(head != NULL){
@@ -25,7 +28,10 @@ College::~College(){
 		delete rmptr;
 	}
 }
-
+/**
+ @brief copy constructor for College object
+ @param const College& other - reference to college objec to make copy of
+ */
 College::College(const College& other){
 	if(other.head == NULL){
 		head = NULL;

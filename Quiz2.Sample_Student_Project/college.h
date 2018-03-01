@@ -1,3 +1,7 @@
+/**
+ @file college.h
+ @brief class definition with member variables and functions for College object
+ */
 //********************
 //Matthew Aberegg
 //Project 3

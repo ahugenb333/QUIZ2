@@ -1,3 +1,7 @@
+/**
+ @file course.h
+ @brief contains class definitions for course object, including fields and comparators
+ */
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
@@ -47,6 +51,9 @@ class course{
 	double hours;
 };
 
+/**
+ @brief provices instructions for reading or writing to standard input
+ */
 std::istream& operator >>(std::istream& ins, course& c);
 std::ostream& operator <<(std::ostream& outs, const course& c);
 
